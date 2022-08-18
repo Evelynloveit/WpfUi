@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="ChatApp.UserControls.UserImage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Name="userIamge">
+    <Border BorderThickness="2" BorderBrush="White" CornerRadius="50" VerticalAlignment="Center">
+        <Ellipse Width="23" Height="23">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="{Binding ElementName=userIamge,Path=Image}"/>
+            </Ellipse.Fill>
+        </Ellipse>
+    </Border>
+</UserControl>
